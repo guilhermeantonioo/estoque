@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link rel="stylesheet" href="styles/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Estoque da Liddy</title>
+</head>
+
+<body>
+
+    <header class="w-full h-{420px} bg-zinc-900 bg-home bg-cover bg-center" >
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img 
+            src="imagens/logo.jpeg" 
+            alt="Logo Hamburgueria"
+            class="max-w-28 h-28 rounded-full shadow-lg hover:scale-110 duration-200">
+
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Estoque da Liddy</h1>
+
+        </div>
+    </header>
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Presenteie sua querida Mãe!</h2>
+
+    <div id="menu">
+
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+            <div class="flex gap-2 md:  mx-5">
+                <img 
+                src="imagens/floratta-myBlue.jpg"
+                alt="floratta-myBlue"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-1 duration-100">
+
+                <div>
+                    <p class="text-bold">Floratta my Blue</p>
+                    <p class="text-sm">Floratta My Blue Desodorante Colônia incentiva você a redescobrir o romance.</p>
+                    
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold text-lg">R$ 149,90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn text-white"
+                    data-name="floratta-myBlue" 
+                    data-price="149.90">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+                </div>
+            </div>
+            
+            <div class="flex gap-2">
+                <img 
+                src="imagens/floratta-red.webp"
+                alt="Floratta red"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-1 duration-100">
+
+                <div>
+                    <p class="text-bold">Floratta Red</p>
+                    <p class="text-sm"> Floratta acredita que quando você vive um romance sem compromisso você se surpreende.</p>
+                
+
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold text-lg">R$ 149,90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn text-white"
+                    data-name="Hamburguer Duplo" 
+                    data-price="32.90">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img 
+                src="imagens/floratta-rose.jpg"
+                alt="floratta-rose"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-1 duration-100">
+
+                <div>
+                    <p class="text-bold">Floratta Rose Desodorante Colônia 75ml</p>
+                    <p class="text-sm">Floratta Rose é uma fragrância feminina com um toque alegre, criada especialmente para mulheres otimistas.</p>
+                
+
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold text-lg">R$ 139,90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn text-white"
+                    data-name="floratta-rose" 
+                    data-price="139.90">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+            </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img 
+                src="imagens/floratta-gold.webp"
+                alt="floratta-gold"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-1 duration-100">
+
+                <div>
+                    <p class="text-bold">Floratta Gold Desodorante Colônia 75ml</p>
+                    <p class="text-sm space"> Floratta Gold Desodorante Colônia é uma fragrância feminina inconfundível, feita para mulheres confiantes e bem resolvidas</p>
+                
+
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold text-lg">R$ 139,90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn text-white"
+                    data-name="floratta-gold" 
+                    data-price="139.90">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img 
+                src="imagens/floratta-love-flower.webp"
+                alt="floratta-love-flower"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-1 duration-100">
+
+                <div>
+                    <p class="text-bold">Floratta Love Flower Desodorante Colônia 75ml</p>
+                    <p class="text-sm">Floratta Love Flower é uma fragrância Floral Amadeirada, que traduz o romantismo e a ousadia em sua essência.</p>
+                
+
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold text-lg">R$ 149,90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn text-white"
+                    data-name="floratta-love-flower" 
+                    data-price="149.90">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+            </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img 
+                src="imagens/floratta-romance-de-verao.webp"
+                alt="floratta-romance-de-verao"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-1 duration-100">
+
+                <div>
+                    <p class="text-bold">Floratta Romance de Verão Desodorante Colônia 75ml</p>
+                    <p class="text-sm space"> Floratta Gold Desodorante Colônia é uma fragrância feminina inconfundível, feita para mulheres confiantes e bem resolvidas</p>
+                
+
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold text-lg">R$ 119,90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn text-white"
+                    data-name="floratta-romance-de-verao" 
+                    data-price="119.90">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img 
+                src="imagens/floratta-blue.webp"
+                alt="floratta-blue"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-1 duration-100">
+
+                <div>
+                    <p class="text-bold">Floratta Blue Desodorante Colônia 75ml</p>
+                    <p class="text-sm">O Floratta Blue Desodorante Colônia é um clássico da perfumaria feminina do Boticário. A combinação de notas florais.</p>
+                
+
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold text-lg">R$ 139,90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn text-white"
+                    data-name="floratta-blue" 
+                    data-price="139.90">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+            </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img 
+                src="imagens/acordes-harmonia.webp"
+                alt="acordes-harmonia"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-1 duration-100">
+
+                <div>
+                    <p class="text-bold">Accordes Harmonia Desodorante Colônia 80ml</p>
+                    <p class="text-sm space">Accordes Harmonia Desodorante Colônia é uma fragrância feminina Floral Aldeídico surpreendente!</p>
+                
+
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold text-lg">R$ 204,90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn text-white"
+                    data-name="floratta-gold" 
+                    data-price="204.90">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img 
+                src="imagens/acordes-tradicional.webp"
+                alt="acordes-tradicional"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-1 duration-100">
+
+                <div>
+                    <p class="text-bold">Accordes Desodorante Colônia 80ml</p>
+                    <p class="text-sm space">Accordes Desodorante Colônia envolve e atrai quem está ao seu redor.</p>
+                
+
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold text-lg">R$ 204,90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn text-white"
+                    data-name="acordes" 
+                    data-price="204.90">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img 
+                src="imagens/nativa-spa-lilac.webp"
+                alt="nativa-spa-lilac"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-1 duration-100">
+
+                <div>
+                    <p class="text-bold">Loção Renovadora Desodorante Hidratante Corporal Nativa Spa Lilac 400ml
+                    </p>
+                    <p class="text-sm">A Loção Renovadora Desodorante Hidratante Nativa Spa Lilac chegou para fazer parte do seu momento de autocuidado, para uma pele que se renova como as flores a cada temporada.</p>
+                
+
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold text-lg">R$ 82,90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn text-white"
+                    data-name="Hidratante-nativa-spa-lilac" 
+                    data-price="82.90">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+            </div>
+            </div> 
+            
+            <div class="flex gap-2">
+                <img 
+                src="imagens/nativa-spa-ameixa-negra.webp"
+                alt="nativa-spa-ameixa-negra"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-1 duration-100">
+
+                <div>
+                    <p class="text-bold">Loção Hidratante Desodorante Corporal Nativa Spa Ameixa Negra 400ml</p>
+                    <p class="text-sm">Como símbolo de sensualidade e intensidade, a Loção Hidratante Desodorante Corporal Nativa Spa Ameixa Negra é um estímulo para a pele. É a união de hidratação profunda com um delicioso aroma floral orienta amadeirado.</p>
+                
+
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold text-lg">R$ 82,90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn text-white"
+                    data-name="nativa-spa-ameixa-negra" 
+                    data-price="82.90">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+            </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img 
+                src="imagens/nativa-spa-ameixa.webp"
+                alt="nativa-spa-ameixa"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-1 duration-100">
+
+                <div>
+                    <p class="text-bold">Loção Hidratante Desodorante Corporal Nativa Spa Ameixa  400ml</p>
+                    <p class="text-sm">Como símbolo de sensualidade e intensidade, a Loção Hidratante Desodorante Corporal Nativa Spa Ameixa Negra é um estímulo para a pele.</p>
+                
+
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold text-lg">R$ 82,90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn text-white"
+                    data-name="nativa-spa-ameixa" 
+                    data-price="82.90">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+            </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img 
+                src="imagens/nativa-spa-rose.webp"
+                alt="nativa-spa-rose"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-1 duration-100">
+
+                <div>
+                    <p class="text-bold">Loção Hidratante Desodorante Corporal Nativa Spa Rosé 400ml</p>
+                    <p class="text-sm"> Uma alquimia perfeita com uma fragrância que traz a faceta mais moderna das flores. Uma alquimia perfeita com uma fragrância que traz a faceta mais moderna das flores.</p>
+                
+
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold text-lg">R$ 82,90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn text-white"
+                    data-name="nativa-spa-rose" 
+                    data-price="82.90">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+            </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img 
+                src="imagens/cuide-se-bem-framboesa.webp"
+                alt="cuide-se-bem-framboesa"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-1 duration-100">
+
+                <div>
+                    <p class="text-bold">Loção Desodorante Hidratante Cuide-se Bem Feira Framboesa 400ml</p>
+                    <p class="text-sm">Com Cuide-se Bem Feira, a feira é diferente, está em toda parte, vai com você aonde você for, no dia e na hora que você quiser!  
+                    </p>
+                
+
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold text-lg">R$ 55,90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn text-white"
+                    data-name="cuide-se-bem-framboesa" 
+                    data-price="55.90">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+            </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img 
+                src="imagens/hid-cuide-se-bem-deleite.webp"
+                alt="cuide-se-bem-deleite"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-1 duration-100">
+
+                <div>
+                    <p class="text-bold">Loção Desodorante Hidratante Corporal Cuide-se Bem Deleite 400ml</p>
+                    <p class="text-sm">A Loção Desodorante Hidratante Corporal Cuide-se Bem Deleite traz uma opção de  autocuidado aonde você for!</p>
+                
+
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold text-lg">R$ 55.90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn text-white"
+                    data-name="cuide-se-bem-deleite" 
+                    data-price="55.90">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+            </div>
+            </div>
+
+
+            <div class="flex gap-2">
+                <img 
+                src="imagens/egeo-dolce.webp"
+                alt="egeo-dolce"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-1 duration-100">
+
+                <div>
+                    <p class="text-bold">Egeo Dolce Desodorante Colônia 90ml
+                    </p>
+                    <p class="text-sm"> A fragrância que você ama está de cara nova! Pensando nos nossos compromissos de sustentabilidade, O Boticário trouxe uma nova embalagem para sua fragrância preferida.</p>
+                
+
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold text-lg">R$ 139,90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn text-white"
+                    data-name="egeo-dolce" 
+                    data-price="139.90">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+            </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img 
+                src="imagens/egeo-red.webp"
+                alt="egeo-red"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-1 duration-100">
+
+                <div>
+                    <p class="text-bold">Egeo Red Desodorante Colônia 90ml</p>
+                    <p class="text-sm">A fragrância que você ama está de cara nova! Pensando nos nossos compromissos de sustentabilidade, O Boticário trouxe uma nova embalagem para sua fragrância preferida.</p>
+                
+
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold text-lg">R$  126,90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn text-white"
+                    data-name="egeo-red" 
+                    data-price="126.90">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+            </div>
+            </div>
+            
+            <div class="flex gap-2">
+                <img 
+                src="imagens/egeo-ejoy.webp"
+                alt="egeo-ejoy"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-1 duration-100">
+
+                <div>
+                    <p class="text-bold">Egeo Ejoy Desodorante Colônia 90ml</p>
+                    <p class="text-sm"> Egeo E.Joy te convida a vibrar com a química da felicidade e se jogar em experiências através de uma fragrância marcante e compartilhável composta por um mix de diferentes notas que vai agradar a todos!</p>
+                
+
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold text-lg">R$   139,90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn text-white"
+                    data-name="egeo-ejoy" 
+                    data-price="139.90">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+            </div>
+            </div>
+        </main>
+</div>
+
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden" id="cart-modal">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center text-bold text-2xl mb-2">Meu Carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+                <p class="font-bold">total: <span id="cart-total">0.00</span></p>
+
+
+
+                <p class="font-bold mt-4">Endereço de entrega:</p>
+                
+                <input type="text" id="address" placeholder="Digite seu endereço">
+
+
+
+                
+                <p class="text-red-600 hidden" id="address-warn">Digite seu endereço completo</p>
+
+                <div class="flex items-center justify-between mt-5 w-full ">
+                    <button id="close-modal" class="bg-zinc-900 px-4 py-1 rounded text-white">Fechar</button>
+                    <button id="checkout-btn" class="bg-green-600 text-white rounded px-4 py-1">Finalizar Pedido</button>
+                </div>
+        </div>
+
+    </div>
+
+
+    <footer class="w-full bg-green-600 py-3 fixed  bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center justify-center gap-2 font-bold" id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Veja seu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
